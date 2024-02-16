@@ -1,0 +1,42 @@
+.row{
+    background-color: black;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    /* flex-direction: row default; */
+    /* flex-direction: coloumn; */
+    /* justify content vertical and align itemshorizontal */
+    /* horizontal */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: flex-end; */
+    justify-content: space-around;
+    /* vertical changes */
+    align-items: center;
+    /* align-items: end; */
+    flex-wrap: wrap;
+}
+.col{
+    border:2px yellow solid;
+    height: 300px;
+    width: 200px;
+    border-color: aqua;
+    margin-top: 50px;
+    
+    margin: 50px;
+}
+.col-1{
+    background-color: pink;
+}
+.col-2{
+    background-color: rgb(225, 192, 255);
+}
+.col-3{
+    background-color: rgb(192, 255, 236);
+}
+.col-4{
+    background-color: rgb(222, 255, 192);
+}
+.col-5{
+    background-color: pink;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background-color: #eee;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin-right: 20px;
+    }
+    .dashboard-container {
+      display: flex;
+    }
+    aside {
+      width: 200px;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <title>Dashboard</title>
+</head>
+<body>
+
+  <header>
+    <h1>Dashboard</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Settings</a></li>
+      <div onclick="logout()">Logout</div>
+    </ul>
+  </nav>
+
+  <div class="dashboard-container">
+
+    <aside>
+      <h2>Sidebar</h2>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Users</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Main Content</h2>
+      <p>Welcome <span id="displayUser">User</span></p>
+    </main>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+    if(localStorage.getItem("user")){
+  displayUser.innerHTML = localStorage.getItem("user")
+    displayUser.innerHTML = localStorage.getItem("user")
+  }
+  else{
+    alert("please login!!!!!")
+    window.location= "login.html"
+  }
+  const logout= ()=>{
+    localStorage.removeItem("user")
+    window.location="login.html"
+  }
+</script>
+</html>

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+p{
+    /* fontsize: xx-large */
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Ephesis', cursive;
+        /*  css rule on fontfamily and link in first of css page using chrome*/
+    line-height: 30px;
+
+}
+h1{
+  font-family: 'Times New Roman', Times, serif;
+}

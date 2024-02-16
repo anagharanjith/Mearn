@@ -1,0 +1,28 @@
+div{
+    width: 200px;
+    height: 300px;
+    background-color: aqua;
+    margin: 100px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: anim 1s ease-in .3s infinite;
+}
+@keyframes anim{
+    0%{
+        width: 50px;
+        background-color: red;
+    }
+    50%{
+        width: 100px;
+        background-color: rgba(9, 255, 0, 0.418);
+    }
+    100%{
+        width: 150px;
+        background-color: rgb(0, 153, 255);
+    }
+    150%{
+        width: 200px;
+        background-color: rgb(255, 0, 43);
+    }
+   
+
+}

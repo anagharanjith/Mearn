@@ -1,0 +1,9 @@
+div{
+    height: 100px;
+    width: 200px;
+    border: solid 4px black;
+    background-color: aqua;
+    position: sticky;
+    top: 4px;
+    left: 10px;
+}

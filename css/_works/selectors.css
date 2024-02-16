@@ -1,0 +1,42 @@
+h1{
+    color: aqua;
+}
+/* h1 tag itself is represented in css as h1 */
+/* id is represented in css as #d1 */
+#d1{
+    color: red;
+}
+/* class is represented in css as .class */
+.c{
+    color: yellow; 
+}
+.c1{
+    color: black;
+    background-color: rgba(255, 192, 203, 0.767);
+    text-align: center;
+}
+/* 
+tagname
+id selector #
+class selector .classname */
+h2,p{
+    color:#32a866
+}
+/* parent child calling bold text to cham=nge color */
+p b{
+    color: magenta;
+   
+}
+div{
+    background-color: aqua;
+}
+#d3{
+    background-color:blue;
+}
+span{
+color: orange;
+}
+h2:hover{
+    color: red;
+    background-color: yellow;
+}

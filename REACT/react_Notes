@@ -1,0 +1,118 @@
+    REACT JS -FRONT-END DEVELOPMENT LIBRARY FOR WEB DEVELOPMENT
+    -----------------------------------------------------------
+    1. Create user interfaces from components
+        Components : 
+            - Components can be button,Can be a form or also can be a entire page
+            - Components are reusable
+            - Components are part of User Interface
+
+    2. Used to create single page applications :
+            any of one single page will be the parent and that page is running.All other components are directly or indirectly connected to this parent
+    3. Declarative Approach
+    4. Pure Functions : Functions with no side effects
+    5. Virtual DOM : React DOM only reloades the updated element and will not reload the entire webpage
+    6. Tranfiling : The process of converting REACT code(JSX) to HTML CSS and JS (browsers will only          understands these 3) using Babel library which will convert
+    7. Data Sharing in React : Unidirectional (Parent -> Child)
+    Mutable and Immutable variable are available 
+    8.Creating React Applications :
+            - using create-react-app : npm create-react-app app_name
+                    if npm not installed install it before : npm install -g npm
+            - using vite : npm create vite@latest
+                    if vite not installed install it before : npm i -g create-vite
+     9. JSX(Javascript XML) - It is a JavaScript syntax extension .which is a combinarion of HTML and JS
+        - JSX expressions must be inside a single parent   element 
+        - React Fragments : <> </> similar to container tag
+        - Changes in attribute : using camel case 
+                - class become ClassName 
+                - for become htmlFor 
+        - to display js expressions inside JSX : to place js expression inside {} in JS Code
+        - JSX require closing tag for all tags : Self closing tags are allowed <tagname/>
+   10. Styling JSX using CSS :
+                - inline CSS : use style tag,should be object{key:'value'} ,property should be in camel case 
+                eg:- style={{color:'red'},{fontSize:'60px'}}
+                - External CSS : import css file to the page 
+                - CSS module :create a file with extension as .module.css
+   11. REACT Components : Part of UI ,react app is a collection of Components, All the Components are arranged in Tree structure ,
+   Root or Parent node : "App" Component
+        -to create a Child Components :
+                1. create a JS/JSX file 
+                2. filename  must starts with capital letter  
+                3. it always return or render  JSX code
+        - Different ways to create Components
+                - Class Based Component / Stateful Component :inherits all the property of React Component class 
+                - Functional Based Component / Stateless Component
+        - Shortcut for loading basic structure :
+                - rfce
+                (React Functional Export Component)
+                - rcc 
+                (React Class Components)
+12. React Event Handling :
+        - Event Binding without argument :
+                if function do not have arguments then we can bind the function into an event without parathesis in react 
+                syn : event-name={functioName}
+                         eg:- const handleSubmit=()=>{
+                                alert("please enter username!!!")
+                                }
+                                onClick={handleSubmit}
+        - Event Binding with arguments :
+                if function holds an argument then bind the function into an event call the function inside the body of an arrow function otherwise it will returns before event happening
+                syn : event-name={()=>functioName(arg)}
+                        eg:- const handleShow=(data)=>{
+                                alert(data)
+                        }       
+                        onClick={()=>handleSubmit("This is the data")}
+        - Event Binding with Event as arguments :
+                argument of the arrow function will be the event and call event name when binding as function and event name is used to call the same function
+                syn : event-name={(event)=>functioName(event)}
+                        eg:- const handleGetName=(e)=>{
+                                console.log(e.target.value);
+                                }
+                                onChange{e=>handlegetName(e)}
+13. Data Sharing : 
+        data sharing is only from parent to child using props ,**props :property of Components
+        - props : it is a type of object , to access props from component argument
+14. React State :
+        Used to store data and it can access and update anywhere in the componentreload it
+        A property of React Component. Class component inherits React Component 
+        so that class can able to create state by default but not able to creat in a functional component
+15. React Hooks :  to provide react component features to functional component, is a predefined function
+                - How to use Hooks in functional components:
+                        -it should call the hook at the top level of the component
+                        -Hooks are not conditional
+                - Types of Hooks 
+                        - Predefined Hooks 
+                                1.useState() :use to create state in Functional component
+                                2.useEffect(callback ,dependency) 
+                        - Customized Hook : A function with name start with "use"
+ 13. Conditional Rendering: Based on a condition we can decide the visibility of JSX element in DOM
+        Rendering : putting jsx into html(browser)
+        - view or hide JSX element based on a condition
+                -if-statement (&&)
+                -if-else statement(ternery operator(? :))
+        Rendering list : use map method ,use key attribute to set unique key for each duplicated item in the list
+14. React Component Life Cycle Methods:
+        - Mounting Phase : Putting all elements to DOM
+                -constructor()
+                -getDerivedFromProps() 
+                -render()
+                -componentDidMount()
+                // (automatically execute after rendering)
+        - Updating Phase() : when  component is updated
+                -getDerivedStateFromProps()
+                -shouldComponentUpdate() (decide the updation status)
+                -render()
+                -getSnapshotBeforeUpdate()(snapshot copy of before updation is taken ,compare before update and after update)
+                -componentDidUpdate()
+        - UnMounting Phase() : remove element from DOM
+                -componentWillUnmount()
+ 15. MUI -meterial UI
+ 16. react bootstrap- 
+        - install react bootrap - npm install react-bootstrap bootstrap
+        - for using react bootstrap we need to add theme to it (eg:- bootswatch.com download and store theme to the src folder )
+
+17. Setting path for React-Component :
+        - can set up path in App / Root Component
+        - install react-router-dom package : npm i react-router
+        - entire React App should be render in Brouser Router Selector
+        - 
+        

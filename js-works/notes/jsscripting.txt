@@ -1,0 +1,56 @@
+JS- front end language    - used applay behaivor to html elements
+--------------------------------
+
+- DOM :Document object model - tree representation of html elements in browser while loading a web page
+-document object in js used to access DOM
+- ways to applay js in html 
+       - internal js : use script tag
+       -external js  : define js code in external js file , to connect js file use script tag
+-ways to access html elements in js
+          -use tag names :document.getElementByTagName('tag-name)
+          -use id :document.getElementByTagId  (id)
+          -use class :document.getElementByTagClass  ('class-name)
+          -use querySelector : document.querySelector('getElementByTagName/#id/.class-name')
+          -use querySelectorAll : document.querySelectorAll('getElementByTagName/#id/.class-name')
+- Browser storage  : where we can store permenantly
+            -localstorage
+               -setItem(key,value)
+               -getItem(key)
+               -removeItem(key)
+             -session storage
+             -cookie  
+
+-function handling in javascript
+            -synchronus function
+            -asynchronus function   : - callback function
+                                          - callbackhell :nesting 
+                                      - API call
+                                      -Event loop
+
+- API :Application programming interface
+       - API s are used to communicate between different Application in internet
+     -REST API
+              -HTTP REQUEST (GET/POST/PUT/DELETE)  
+                  -Header
+                  -Body  : hold JSON data to be shared
+              - HTTP Response  status code 
+                     - 100 series  code : Information
+                     - 200 series  code :sucess
+                     - 300 series  code :redirections
+                     - 400 series  code : client error
+                     - 500 series  code : server error
+              -JSON (javascript object notation)    
+                 : hold data as key valuepair ,where key must string
+              _ URL : uniform resource locator
+                ex: https://docs.google.com/spreadsheets/854486734
+                  -host : docs.google.com
+                  - URL : docs.google.com/spreadsheets
+                  - path : 854486734
+                - ex :    https://docs.google.com/spreadsheets?q=854486734
+                     -query parameter : 854486734
+                     - body parameter : 
+
+
+                     
+                      
+

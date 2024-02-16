@@ -1,0 +1,20 @@
+oops concept: Object oriented programming
+    
+    - object: real world entity
+    - class: blueprint of objects  (case sensitive class name should starts with capital letters)
+         - properties
+         - functions
+       - Reference  :'this' keyword
+- features 
+        - classical inheritance    - using extends as keyword
+                                   - prototype inheritance: use  _proto_
+        -polymorphism    -
+        -encapsulation   - store data inside another data
+        -abstraction     - hiding implementation details from a users
+
+ -Rest operator (...)  :used to put all values into an array       
+
+ - Error Handling  - using try-catch-finally block
+
+
+ 

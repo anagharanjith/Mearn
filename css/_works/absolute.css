@@ -1,0 +1,17 @@
+.c{
+    height: 200px;
+    border: solid 4px black;
+}
+.c1{
+    background-color: red;
+    position: absolute;
+    width: 100px;
+    left: 50px;
+}
+.c2{
+    background-color: blue;
+    width: 150px;
+}
+/* static
+absolute
+relative */

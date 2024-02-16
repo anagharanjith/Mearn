@@ -1,0 +1,10 @@
+strings
+
+- startsWith()
+- endsWith()
+- substring()
+- slice()
+- split()
+- trim()
+- toLowercase()/toUppercase()
+- includes()
